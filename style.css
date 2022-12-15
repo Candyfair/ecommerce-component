@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  background: #EFF0F6;
+  font-family: 'Poppins';
+}
+
+.wrapper {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.bg-left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 1;
+}
+
+.bg-right-top {
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.bg-right-bottom {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
