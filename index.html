@@ -62,7 +62,7 @@
       <div class="container">
         <h1 class="title">To go Menu</h1>
 
-        <ul>
+        <ul class="menu__wrapper">
 
           <li>
             <div class="plate__container">
@@ -115,19 +115,83 @@
               </div>
             </div>
           </li>
-
       </ul>
-
-
       </div>
 
+      <!-- Cart -->
       <div class="container">
         <h1 class="title">Your cart</h1>
 
+        <!-- Empty cart -->
+        <p class="cart__empty-cart-text hide">Your cart is empty.</p>
+
+        <!-- Items selected in cart -->
         <div class="cart__wrapper">
-          <p class="cart__empty-cart-text">Your cart is empty.</p>
+          <div class="cart__item">
+            <div class="cart__item__img-group">
+              <img src="./images/plate__french-fries.png" alt="Item selected" class="cart__item__image">
+              <div class="cart__item__number">2</div>
+            </div>
+            <div class="cart__item__description">
+              <p class="cart__item__name">French Fries with Ketchup</p>
+              <p class="cart__item__price">$2.23</p>
+              <div class="cart__item__selection">
+                <div class="cart__item__quantity">
+                  <button class="cart__item__button">
+                    <img src="./images/chevron.svg" alt="Decrease" class="cart__item__button-decrease">
+                  </button>
+                  <span class="cart__item__quantity-selected">2</span>
+                  <button class="cart__item__button">
+                    <img src="./images/chevron.svg" alt="Increase" class="cart__item__button-increase">
+                  </button>
+                </div>
+                <div class="cart__item__total-price">$4.46</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart__item">
+            <div class="cart__item__img-group">
+              <img src="./images/plate__french-fries.png" alt="Item selected" class="cart__item__image">
+              <div class="cart__item__number">2</div>
+            </div>
+            <div class="cart__item__description">
+              <p class="cart__item__name">Spaghetti with sauce</p>
+              <p class="cart__item__price">$7.82</p>
+              <div class="cart__item__selection">
+                <div class="cart__item__quantity">
+                  <button class="cart__item__button">
+                    <img src="./images/chevron.svg" alt="Decrease" class="cart__item__button-decrease">
+                  </button>
+                  <span class="cart__item__quantity-selected">2</span>
+                  <button class="cart__item__button">
+                    <img src="./images/chevron.svg" alt="Decrease" class="cart__item__button-increase">
+                  </button>
+                </div>
+                <div class="cart__item__total-price">$15.64</div>
+              </div>
+            </div>
+
         </div>
 
+      </div>
+
+      <!-- Total -->
+      <div class="total__wrapper">
+        <div class="total__category">
+          <div class="total__text">Subtotal:</div>
+          <div class="cart__item__total-price">$20.10</div>
+        </div>
+
+        <div class="total__category">
+          <div class="total__text">Tax:</div>
+          <div class="cart__item__total-price">$1.96</div>
+        </div>
+
+        <div class="total__category">
+          <div class="total__text">Total:</div>
+          <div class="cart__item__total-price total__amount">$30.12</div>
+        </div>
       </div>
     </div>
   </div>
